@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+        .main {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 50px 50px 0 50px;
+            
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .description {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        ol {
+            text-align: left;
+        }
+
+        h1 {
+            display: inline-block;
+            font-size: 6rem;
+            margin-right: 25px;
+            
+        }
+
+        h2 {
+            line-height: 1.5;
+        }
+
+        .mouse {
+           height: 6rem;
+           display: inline-block;
+           transform: rotate(-25deg)
+        }
+
+        span {
+            color: rgb(173, 25, 25);
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        #twitter {
+            background-color: #00aced;
+            width: 105px;
+            height: 36px;
+            box-sizing: border-box;
+            border: 0px;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-weight: bolder;
+            border-radius: 9999px;
+            cursor: pointer;
+            margin-right: 20px;
+            transition: box-shadow 0.15s;
+        }
+
+        #twitter:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        #subscribe {
+            background-color: #FF0000;
+            width: 105px;
+            height: 36px;
+            box-sizing: border-box;
+            border: 0px;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-weight: bolder;
+            border-radius: 3px;
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 20px;
+            transition: opacity 0.15s;
+        }
+
+        #subscribe:hover {
+            opacity: 0.7;
+        }
+
+        #subscribe:active {
+            opacity: 0.5;
+        }
+
+        #google {
+            width: 105px;
+            height: 36px;
+            border: 0px;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 20px;
+            border-radius: 3%;
+            transition: border 0.15s;
+            transition: box-shadow 0.15s;
+            
+        }
+        
+        #google:hover {
+            border: solid rgb(177, 176, 176);
+            border-width: 1px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        #google:active {
+            border-color: blue;
+        }
+
+        #custom {
+            background-color: #C68B59;
+            color: #FCDEC0;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+            box-sizing: border-box;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            cursor: pointer;
+            display: inline-block;
+            border: none;
+            transition: background-color 0.15s;
+
+        }
+
+        #custom:hover {
+            background-color: #865439;
+            
+        }
+
+        #custom:active {
+            opacity: 0.8;
+            background-image: url(https://i.pinimg.com/236x/37/00/74/37007489cfce5b73a32a27fde0cced20.jpg);
+            background-size: cover;
+            background-position: center;
+            
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>BUTTONS</h1>
+            <img class="mouse" src="./assets/mouse.jpg" alt="mouse-icon" /> 
+        </div>
+            <div class="description"><h2>This simple website shows different types and styles of <span>buttons</span> you can find on the internet! I created this website as a mini-project to practice
+             HTML and CSS and to become more confident in my coding skils. 
+            By clicking on them you can access different websites:
+            <ol>
+                <li>Twitter</li>
+                <li>YouTube</li>
+                <li>Google</li>
+                <li>A website for coffee lovers!</li>
+            </ol>
+            </h2> <hr/>
+            </div>
+            
+        <div class="buttons">
+            <a href="https://twitter.com/"><button id="twitter">Tweet</button></a>
+            <a href="https://www.youtube.com/"></a><button id="subscribe">Subscribe</button>
+            <a href="https://www.google.si/"></a><button id="google">Google search</button>
+            <a href="https://www.starbucks.com/"></a><button id="custom">Coffee <br /> Now!</button>
+        </div>
+    </div>
+</body>
+
+</html>
